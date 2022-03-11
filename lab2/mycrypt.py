@@ -11,7 +11,7 @@ def encode(s):
     #Added characters to 1001, so if the input is 1000 it still has to go trough
     #as many lines of code than the input that has less than 1000
     #so the time is independent of the input.
-    s = s.ljust(1000, 'a')
+    s = s.ljust(1001, 'a')
     #Remove 1 character to get 1000.
     s = s[:-1]
     for c in s:
